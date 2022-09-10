@@ -3,6 +3,101 @@
     margin: 0;
     padding: 0;
 }
+html {
+    font-size: 62.5%;
+}
+:root {
+    --primary-light: #ddd;
+    --primary-dark: #222831;
+    --secondary-dark: #393e46;
+    --secondary-dark-hover: #4a4f57;
+    --secondary-dark-active: #5b5f68;
+    --header: #111720;
+    --primary-yellow: #fac650;
+}
 body {
     font-family: Arial, Helvetica, sans-serif;
+    background-color: var(--primary-dark);
+    color: var(--primary-light);
+    color: white;
+    text-align: center;
+    font-size: 1.6rem;
+    font-weight: bold;
+}
+header {
+    padding-block: 4rem;
+    background-color: var(--header);
+}
+header h1 {
+    font-size: 5.2rem;
+    color: var(--primary-yellow);
+}
+#gameStatus {
+    font-size: 3.2rem;
+    margin-top: 3rem;
+}
+#gameDescription {
+    font-size: 2rem;
+    margin-top: 1rem;
+}
+.container {
+    width: 50%;
+    margin: 2rem auto;
+    display: flex;
+    justify-content: space-around;
+}
+.fa-regular {
+    font-size: 8rem;
+    margin-bottom: 1rem;
+}
+.sectionContainer {
+    margin-top: 3rem;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+.selection {
+    width: 20%;
+    padding-block: 2rem;
+    border-radius: 5%;
+    background-color: var(--secondary-dark);
+    color: var(--primary-yellow);
+}
+.selection:is(:hover, :focus) {
+    background-color: var(--secondary-dark-hover);
+    cursor: pointer;
+}
+.selection:active {
+    background-color: var(--secondary-dark-active);
+}
+footer {
+    margin-top: 6rem;
+    font-size: 2.4rem;
+}
+.icon {
+    color: white;
+    text-decoration: none;
+}
+.fa-github {
+    transition: transform 0.3s ease-in-out;
+}
+.fa-github:hover {
+    transform: rotate(360deg) scale(1.2);
+}
+@media (max-width: 550px) {
+    header h1 {
+        font-size: 3.2rem;
+    }
+    #gameStatus {
+        font-size: 2.6rem;
+    }
+    .container {
+        width: 80%;
+    }
+    .selection {
+        width: 30%;
+    }
+    .fa-regular {
+        font-size: 6rem;
+    }
 }

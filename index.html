@@ -7,10 +7,44 @@
     
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
     <link rel="stylesheet" href="style.css">
-    
+
     <title>Rock Paper and Scissors Game</title>
 </head>
 <body>
+    <header>
+        <h1>Rock Paper Scissors</h1>
+    </header>
+    <main>
+        <h2 id="gameStatus">Choose your weapon</h2>
+        <p id="gameDescription">First to score 5 points wins the game</p>
+        <div class="container">
+            <div class="display">
+                <div>
+                    <i class="fa-regular fa-question" id="userChoice"></i>
+                </div>
+                <p>Player: <span id="userScore">0</span></p>
+            </div>
+            <div class="display">
+                <div>
+                    <i class="fa-regular fa-question" id="computerChoice"></i>
+                </div>
+                <p>Computer: <span id="computerScore">0</span></p>
+            </div>
+        </div>
+    </main>
+    <section class="sectionContainer">
+        <div class="selection"><i class="fa-regular fa-hand-back-fist"></i></div>
+        <div class="selection"><i class="fa-regular fa-hand"></i></div>
+        <div class="selection"><i class="fa-regular fa-hand-scissors"></i></div>
+    </section>
+    <footer>
+        <p>
+            Created By Anas Mustafa 
+            <a href="https://github.com/anasmus/rock-paper-scissors" target="_blank" class="icon">
+                <i class="fa-brands fa-github"></i>
+            </a>
+        </p>
+    </footer>
     <script src="script.js"></script>
 </body>
 </html>
